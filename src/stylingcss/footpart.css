@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+footer {
+    /* margin-top: 5000px; */
+    width: 100%;
+    height: 100vh;
+    margin-top: 2220px;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    /* background-color: aquamarine; */
+}
+
+.container {
+    margin: auto;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contup {
+    width: 81%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.abblogo1 {
+    width: 78px;
+    height: 35px;
+}
+
+.contdown {
+    width: 100%;
+    height: 100vh;
+    padding: 50px 145px;
+    background-color: rgb(249, 249, 249);
+}
+
+.clicks {
+    /* border: 1px solid black; */
+    height: 558px;
+    display: flex;
+
+}
+
+.clicks div {
+    /* border: 1px solid black; */
+    width: 210px;
+}
+
+.clicks div h1 {
+    font-size: 16px;
+}
+
+.firstpart {
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clicks a {
+    font-size: 14px;
+    font-weight: 100;
+    text-decoration: none;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clicks a:hover {
+    text-decoration: underline;
+}
+
+.secondpart {
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    justify-content: space-between;
+}
+
+.thirdpart {
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    justify-content: space-between;
+}
+
+.fourthpart {
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    justify-content: space-between;
+}
+
+.fifthpart {
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    justify-content: space-between;
+}
+
+.sixthpart {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    justify-content: space-between;
+}
+
+.sixthpart p {
+    color: gray;
+    font-size: 14px;
+}
+
+.sixthpart span {
+    color: transparent;
+}
+
+.sixthpart .underline:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.phone {
+    display: flex;
+}
+
+.download {
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 60%;
+}
+
+.download .yukle {
+    margin-right: 10px;
+    border-radius: 6px;
+    background-color: rgb(236, 236, 236);
+    width: 145px;
+    height: 59px;
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 16px;
+}
+
+.downntext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+}
+
+.apple {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.apple p {
+    color: gray;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.apple h4 {
+    color: gray;
+    font-size: 12px;
+}
+
+.logo {
+    margin-right: 6px;
+}
+
+.googleplay p {
+    color: gray;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.googleplay h4 {
+    color: gray;
+    font-size: 12px;
+}
+
+.appgallery p {
+    color: gray;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.appgallery h4 {
+    color: gray;
+    font-size: 12px;
+}
+
+.lastpart {
+    color: gray;
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    background-color: rgb(249, 249, 249);
+}
+
+.lastleft p {
+    font-size: 13px;
+}
+
+.lastcontainer {
+    width: 81%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastmidlogo {
+    width: 30px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+.abit {
+    width: 60px;
+    height: 35px;
+}
+
+.lastmid {
+    display: flex;
+    align-items: flex-start;
+    height: 40px;
+}
