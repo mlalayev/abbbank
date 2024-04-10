@@ -23,7 +23,7 @@ function currency() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 10) { 
+    if (window.scrollY > 10) {
       setIsSticky(true);
     } else {
       setIsSticky(false);
@@ -34,7 +34,7 @@ function currency() {
 
       const stickyheader = document.querySelector('stickyheader');
       if (stickyheader) {
-        stickyheader.style.top = '50px'; 
+        stickyheader.style.top = '50px';
       }
     }
     setPrevScrollPos(currentScrollPos);
@@ -219,7 +219,48 @@ function currency() {
 
 
 
-                  <li>Keşbek</li>
+                  <li className='dropdownli'>Keşbek
+
+
+                    <div className="dropdowndiv60">
+
+                      <div className="leftpartdd">
+
+
+                        <div className="leftdddiv">
+                          <a href="#">Online kredit al</a>
+                          <a href="#">Avtomobil krediti</a>
+                          <a href="#">Əmanətçi nağd krediti</a>
+                        </div>
+
+                        <div className="rightdddiv">
+                          <a href="#">Online kredit al</a>
+                          <a href="#">Avtomobil krediti</a>
+                          <a href="#">Əmanətçi nağd krediti</a>
+                        </div>
+
+                      </div>
+
+                      <div className="horizontalline">
+
+                      </div>
+
+                      <div className="rightpartdd">
+
+                        <img src={kreditlogo} className='kreditlogo' />
+
+                        <div className="rightpartddtext">
+                          <h1>Onlayn kredit sifarişi</h1>
+                          <p>Bütün ehtiyaclarınız üçün nağd pul krediti</p>
+                          <button className='firstlibtn'>Daha ətraflı</button>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                  </li>
 
 
 
