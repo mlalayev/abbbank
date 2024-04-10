@@ -74,47 +74,41 @@
 }
 
 .upperpartleft button {
-    height: 30px;
-    font-weight: 700;
     width: 113px;
+    height: 30px;
+    padding: 7px 0;
     cursor: pointer;
     transition: 0.5s;
+    font-weight: 700;
     margin: 0 15px 0 0;
     border-radius: 40px;
-    padding: 7px 0;
     color: rgb(27, 86, 193);
     background-color: rgb(246, 247, 248);
     border: 1.5px solid rgb(27, 86, 193);
 }
 
 .upperpartleft button:hover {
-    background-color: rgb(27, 86, 193);
     color: #fff;
+    background-color: rgb(27, 86, 193);
 }
 
 .upleftul {
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: 95px 173px 77px 120px 100px 170px;
-    grid-template-rows: 40px;
     width: 750px;
+    display: grid;
     align-items: center;
-    /* margin-top: 50px; */
-    /* justify-content: space-between; */
+    grid-template-rows: 40px;
+    grid-template-columns: 95px 173px 77px 120px 100px 170px;
 }
 
 .upleftul li {
-    list-style: none;
     display: grid;
-
-    /* display: flex; */
-    /* justify-content: space-between; */
+    list-style: none;
 }
 
 .upleftul li a {
     color: gray;
-    text-decoration: none;
     font-size: 13px;
+    text-decoration: none;
     justify-content: space-between;
 
 }
@@ -135,41 +129,41 @@
 .midpart {
     width: 100%;
     height: 74px;
-    padding: 15px 40px;
     display: flex;
-    justify-content: space-between;
+    padding: 15px 40px;
     align-items: center;
+    justify-content: space-between;
     border-bottom: .025rem solid rgb(135, 133, 133, 0.2);
 }
 
 .midpartleft ul {
-    list-style-type: '  /  ';
-    display: flex;
     gap: 30px;
+    display: flex;
+    list-style-type: '  /  ';
 }
 
 .midpartleft {
+    gap: 49px;
     display: flex;
     align-items: center;
-    gap: 49px;
 }
 
 .midpartleft a {
     color: black;
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .ferdi {
-    list-style: none;
     cursor: pointer;
+    list-style: none;
 }
 
 .korporativ a,
 .kob a {
     color: gray;
-    transition: 0.5s;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .korporativ a:hover,
@@ -178,14 +172,14 @@
 }
 
 .bsarrowrightcircle {
-    color: rgb(33, 88, 204);
-    display: flex;
-    background: none;
-    border: none;
-    align-items: center;
     gap: 10px;
-    font-weight: 600;
+    border: none;
+    display: flex;
     font-size: 16px;
+    background: none;
+    font-weight: 600;
+    align-items: center;
+    color: rgb(33, 88, 204);
 }
 
 .lowerpart {
@@ -195,39 +189,36 @@
 }
 
 .lowerpart ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
     width: 880px;
     height: 100%;
-    padding: 0 40px;
-    gap: 14px;
+    display: flex;
     font-size: 14px;
+    padding: 0 40px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .lowerpart ul li {
-    display: flex;
-    align-items: flex-start;
-    height: 100%;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    z-index: 999;
-    position: relative;
     top: 0%;
     left: 0%;
+    z-index: 999;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
 }
 
 .lowerpart ul li::after {
+    left: 0;
+    width: 0%;
+    bottom: 0%;
     content: "";
+    height: 3px;
+    transition: 0.5s;
     position: absolute;
     background-color: rgb(59, 138, 224);
-    height: 3px;
-    width: 0%;
-    left: 0;
-    bottom: 0%;
-    transition: 0.5s;
 }
 
 .lowerpart ul li:hover::after {
@@ -249,16 +240,15 @@
 }
 
 .dropdowndiv {
-    /* border: 1px solid black; */
-    padding: 40px 0px 40px 50px;
-    display: flex;
-    width: 1518px;
-    margin-top: 370px;
     z-index: -1;
-    position: absolute;
+    display: flex;
     display: none;
     height: 300px;
+    width: 1518px;
+    margin-top: 370px;
+    position: absolute;
     margin-left: 1380px;
+    padding: 40px 0px 40px 50px;
     justify-content: space-between;
 }
 
@@ -267,16 +257,15 @@
 }
 
 .dropdowndiv1 {
-    /* border: 1px solid black; */
-    padding: 40px 0px 40px 50px;
-    display: flex;
-    width: 1518px;
-    margin-top: 370px;
     z-index: -1;
-    position: absolute;
-    display: none;
     height: 300px;
-    margin-left: 1080px;
+    width: 1518px;
+    display: flex;
+    display: none;
+    margin-top: 370px;
+    position: absolute;
+    margin-left: -103px;
+    padding: 40px 0px 40px 50px;
     justify-content: space-between;
 }
 
@@ -287,16 +276,15 @@
 }
 
 .dropdowndiv2 {
-    /* border: 1px solid black; */
-    padding: 40px 0px 40px 50px;
-    display: flex;
-    width: 1518px;
-    margin-top: 370px;
     z-index: -1;
-    position: absolute;
-    display: none;
+    width: 1518px;
+    display: flex;
     height: 300px;
+    display: none;
+    margin-top: 370px;
+    position: absolute;
     margin-left: 1080px;
+    padding: 40px 0px 40px 50px;
     justify-content: space-between;
 }
 
@@ -317,16 +305,15 @@
 }
 
 .dropdowndiv3 {
-    /* border: 1px solid black; */
-    padding: 40px 0px 40px 50px;
-    display: flex;
-    width: 1518px;
-    margin-top: 370px;
     z-index: -1;
-    position: absolute;
-    display: none;
     height: 300px;
+    width: 1518px;
+    display: flex;
+    display: none;
+    margin-top: 370px;
+    position: absolute;
     margin-left: 1239px;
+    padding: 40px 0px 40px 50px;
     justify-content: space-between;
 }
 
@@ -357,7 +344,7 @@
     position: absolute;
     display: none;
     height: 300px;
-    margin-left: 740px;
+    margin-left: 291px;
     justify-content: space-between;
 }
 
@@ -378,7 +365,7 @@
 .dropdownli:hover .dropdowndiv4,
 .dropdownli:hover .dropdowndiv5,
 .dropdownli:hover .dropdowndiv6 {
-    background-color: rgb(165, 164, 161);
+    /* background-color: rgb(165, 164, 161); */
 }
 
 /* dropdown div fifth start */
@@ -397,7 +384,7 @@
     position: absolute;
     display: none;
     height: 300px;
-    margin-left: 522px;
+    margin-left: 79px;
     justify-content: space-between;
 }
 
@@ -457,7 +444,7 @@
     position: absolute;
     display: none;
     height: 300px;
-    margin-left: 1045px;
+    margin-left: 624px;
     justify-content: space-between;
 }
 
