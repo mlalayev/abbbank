@@ -6,15 +6,14 @@
 
 .sliderholder {
     width: 100%;
-    /* display: flex; */
     height: 500px;
     justify-content: space-between;
     background-color: rgb(202, 212, 232);
 }
 
-.slidetextandphotoholder{
-    justify-content: space-between;
+.slidetextandphotoholder {
     display: flex;
+    justify-content: space-between;
 }
 
 .slideright img {
@@ -59,9 +58,9 @@
 
 .sliderbtns {
     width: 370px;
+    display: flex;
     margin-top: -62px;
     margin-left: 150px;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -71,4 +70,99 @@
     border: none;
     cursor: pointer;
     background-color: #ffffffad;
+}
+
+.links div {
+    width: 390px;
+    height: 193px;
+    display: flex;
+    border-radius: 8px;
+    background-color: rgb(242, 245, 248);
+}
+
+.links {
+    display: flex;
+    padding: 30px 0 0;
+    justify-content: space-between;
+}
+
+.simplelinks {
+    padding: 48px 0 0;
+    margin: 75px 145px;
+}
+
+.simplelinks h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.secondsimplelink,
+.firstsimplelink {
+    width: 118px;
+    height: 190px;
+}
+
+.thirdsimplelink {
+    width: 150px;
+}
+
+.lefttext1,
+.lefttext2,
+.lefttext3 {
+    width: 258px;
+    height: 193px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 15px 24px 24px;
+}
+
+.lefttext1 button {
+    width: 98px;
+    cursor: pointer;
+    margin: 21px 0 0;
+    height: 42px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #2058BB;
+}
+
+.lefttext2 button {
+    height: 42px;
+    width: 105px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #2058BB;
+}
+
+.lefttext3 button {
+    height: 42px;
+    width: 137px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #2058BB;
+}
+
+.lefttext1 h1,
+.lefttext2 h1,
+.lefttext3 h1{
+    font-size: 16px;
+    font-weight:bold;
+}
+
+
+.lefttext1 p,
+.lefttext2 p,
+.lefttext3 p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #959494;
+    margin: 4px 0 16px;
 }
