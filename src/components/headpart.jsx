@@ -23,7 +23,7 @@ function currency() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 1) {
       setIsSticky(true);
     } else {
       setIsSticky(false);
@@ -34,7 +34,7 @@ function currency() {
       const stickyheader = document.querySelector('stickyheader');
       if (stickyheader) {
         stickyheader.style.top = '50px';
-        stickyheader.opacity = '1'
+        stickyheader.transition = '1s'
       }
     }
     setPrevScrollPos(currentScrollPos);
