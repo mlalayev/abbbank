@@ -30,11 +30,11 @@ function currency() {
     }
     if (!isScrollUp) {
 
-      //when scrolling down
 
       const stickyheader = document.querySelector('stickyheader');
       if (stickyheader) {
         stickyheader.style.top = '50px';
+        stickyheader.opacity = '1'
       }
     }
     setPrevScrollPos(currentScrollPos);

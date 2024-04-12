@@ -1,14 +1,17 @@
-import { useState } from 'react'
 import './App.css'
+import { useState } from 'react'
+import Headroom from 'react-headroom'
 import HEADER from './components/headpart.jsx'
 import FOOTER from './components/footpart.jsx'
-import Headroom from 'react-headroom'
+import HOME from './components/home.jsx'
+
 
 function App() {
 
   return (
     <>
       <HEADER />
+      <HOME />
       <FOOTER />
     </>
   )

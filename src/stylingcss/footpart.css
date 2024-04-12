@@ -6,28 +6,26 @@
 }
 
 footer {
-    /* margin-top: 5000px; */
     width: 100%;
     height: 100vh;
     margin-top: 2220px;
     border-top: 1px solid rgba(128, 128, 128, 0.2);
-    /* background-color: aquamarine; */
 }
 
 .container {
     margin: auto;
     height: 70px;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
-
+    
 .contup {
     width: 81%;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .abblogo1 {
@@ -66,10 +64,10 @@ footer {
 }
 
 .clicks a {
+    color: gray;
     font-size: 14px;
     font-weight: 100;
     text-decoration: none;
-    color: gray;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -78,37 +76,37 @@ footer {
 }
 
 .secondpart {
+    height: 540px;
     display: flex;
     flex-direction: column;
-    height: 540px;
     justify-content: space-between;
 }
 
 .thirdpart {
+    height: 360px;
     display: flex;
     flex-direction: column;
-    height: 360px;
     justify-content: space-between;
 }
 
 .fourthpart {
+    height: 430px;
     display: flex;
     flex-direction: column;
-    height: 430px;
     justify-content: space-between;
 }
 
 .fifthpart {
+    height: 210px;
     display: flex;
     flex-direction: column;
-    height: 210px;
     justify-content: space-between;
 }
 
 .sixthpart {
+    height: 250px;
     display: flex;
     flex-direction: column;
-    height: 250px;
     justify-content: space-between;
 }
 
@@ -132,38 +130,38 @@ footer {
 
 .download {
     /* border: 1px solid black; */
+    width: 60%;
     display: flex;
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 60%;
 }
 
 .download .yukle {
-    margin-right: 10px;
-    border-radius: 6px;
-    background-color: rgb(236, 236, 236);
     width: 145px;
     height: 59px;
-    /* border: 1px solid black; */
     display: flex;
     padding: 16px;
+    border-radius: 6px;
+    margin-right: 10px;
+    /* border: 1px solid black; */
+    background-color: rgb(236, 236, 236);
 }
 
 .downntext {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     /* border: 1px solid black; */
-    width: 100%;
-    height: 100%;
 }
 
 .apple {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .apple p {
@@ -204,9 +202,9 @@ footer {
 }
 
 .lastpart {
-    color: gray;
     width: 100%;
     margin: auto;
+    color: gray;
     height: 200px;
     background-color: rgb(249, 249, 249);
 }
@@ -234,7 +232,7 @@ footer {
 }
 
 .lastmid {
+    height: 40px;
     display: flex;
     align-items: flex-start;
-    height: 40px;
 }

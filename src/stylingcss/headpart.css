@@ -7,6 +7,7 @@
 }
 
 .upperpart {
+    opacity: 1;
     width: 100%;
     height: 50px;
     display: flex;
@@ -19,8 +20,9 @@
 .stickyheader {
     top: 50px;
     width: 100%;
-    z-index: -1;
+    z-index: 999;
     position: fixed;
+    background: #FFF;
   }
 
 .upperpartright {
@@ -127,6 +129,7 @@
 }
 
 .midpart {
+    opacity: 1;
     width: 100%;
     height: 74px;
     display: flex;
@@ -183,6 +186,7 @@
 }
 
 .lowerpart {
+    opacity: 1;
     width: 100%;
     height: 75px;
     border-bottom: 1px solid rgb(136, 136, 136, 0.2);
@@ -239,8 +243,19 @@
     display: flex;
 }
 
+.dropdownli:hover .dropdowndiv,
+.dropdownli:hover .dropdowndiv1,
+.dropdownli:hover .dropdowndiv2,
+.dropdownli:hover .dropdowndiv3,
+.dropdownli:hover .dropdowndiv4,
+.dropdownli:hover .dropdowndiv5,
+.dropdownli:hover .dropdowndiv60,
+.dropdownli:hover .dropdowndiv6 {
+    background-color: #FFF;
+}
+
 .dropdowndiv {
-    z-index: -1;
+    z-index: 999;
     display: flex;
     display: none;
     height: 300px;
@@ -257,7 +272,7 @@
 }
 
 .dropdowndiv1 {
-    z-index: -1;
+    z-index: 999;
     height: 300px;
     width: 1518px;
     display: flex;
@@ -276,7 +291,7 @@
 }
 
 .dropdowndiv2 {
-    z-index: -1;
+    z-index: 999;
     width: 1518px;
     display: flex;
     height: 300px;
@@ -305,7 +320,7 @@
 }
 
 .dropdowndiv3 {
-    z-index: -1;
+    z-index: 999;
     height: 300px;
     width: 1518px;
     display: flex;
@@ -335,16 +350,15 @@
 }
 
 .dropdowndiv4 {
-    /* border: 1px solid black; */
-    padding: 40px 0px 40px 50px;
-    display: flex;
+    z-index: 999;
     width: 1518px;
-    margin-top: 370px;
-    z-index: -1;
-    position: absolute;
-    display: none;
     height: 300px;
+    display: flex;
+    display: none;
+    margin-top: 370px;
+    position: absolute;
     margin-left: 291px;
+    padding: 40px 0px 40px 50px;
     justify-content: space-between;
 }
 
@@ -358,15 +372,7 @@
 
 /* dropdown div fourth end */
 
-.dropdownli:hover .dropdowndiv,
-.dropdownli:hover .dropdowndiv1,
-.dropdownli:hover .dropdowndiv2,
-.dropdownli:hover .dropdowndiv3,
-.dropdownli:hover .dropdowndiv4,
-.dropdownli:hover .dropdowndiv5,
-.dropdownli:hover .dropdowndiv6 {
-    /* background-color: rgb(165, 164, 161); */
-}
+
 
 /* dropdown div fifth start */
 
@@ -375,16 +381,15 @@
 }
 
 .dropdowndiv5 {
-    /* border: 1px solid black; */
-    padding: 40px 0px 40px 50px;
+    z-index: 999;
     display: flex;
-    width: 1518px;
-    margin-top: 370px;
-    z-index: -1;
-    position: absolute;
     display: none;
     height: 300px;
+    width: 1518px;
+    margin-top: 370px;
+    position: absolute;
     margin-left: 79px;
+    padding: 40px 0px 40px 50px;
     justify-content: space-between;
 }
 
@@ -406,16 +411,15 @@
 }
 
 .dropdowndiv6 {
-    /* border: 1px solid black; */
-    padding: 40px 0px 40px 50px;
-    display: flex;
+    z-index: 999;
     width: 1518px;
-    margin-top: 370px;
-    z-index: -1;
-    position: absolute;
+    display: flex;
     display: none;
     height: 300px;
+    margin-top: 370px;
+    position: absolute;
     margin-left: 1045px;
+    padding: 40px 0px 40px 50px;
     justify-content: space-between;
 }
 
@@ -435,16 +439,15 @@
 }
 
 .dropdowndiv60 {
-    /* border: 1px solid black; */
-    padding: 40px 0px 40px 50px;
-    display: flex;
+    z-index: 999;
     width: 1518px;
-    margin-top: 370px;
-    z-index: -1;
-    position: absolute;
+    display: flex;
     display: none;
     height: 300px;
+    margin-top: 370px;
+    position: absolute;
     margin-left: 624px;
+    padding: 40px 0px 40px 50px;
     justify-content: space-between;
 }
 
@@ -459,33 +462,33 @@
 /* dropdown div sixth end */
  
 .leftpartdd {
-    display: flex;
-    width: 390px;
-    margin-left: 40px;
     height: 90px;
+    width: 390px;
+    display: flex;
+    margin-left: 40px;
     justify-content: space-between;
 
 }
 
 .leftdddiv {
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .rightdddiv {
-    justify-content: space-between;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .horizontalline {
-    border: 1px solid rgba(156, 154, 154, 0.2);
-    display: block;
     left: 41%;
     width: 0px;
     bottom: 40%;
     height: 220px;
+    display: block;
+    border: 1px solid rgba(156, 154, 154, 0.2);
 }
 
 .rightpartdd {
@@ -493,31 +496,30 @@
 }
 
 .rightpartddtext {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 150px;
-    margin: auto 100px auto 50px;
-    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    margin: auto 100px auto 50px;
     justify-content: space-around;
 }
 
 .firstlibtn {
     width: 150px;
     height: 50px;
-    border-radius: 10px;
-    border: 1px solid black;
     color: black;
-    background-color: #fff;
     cursor: pointer;
     font-size: 16px;
     transition: 500ms;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid black;
 }
 
 .firstlibtn:hover {
-    border: 1px solid #fff;
     color: white;
+    border: 1px solid #fff;
     background-color: black;
 }
 
