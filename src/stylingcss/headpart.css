@@ -18,7 +18,7 @@
 }
 
 .stickyheader {
-    top: 50px;
+    top:50px;
     width: 100%;
     z-index: 999;
     position: fixed;
@@ -217,7 +217,7 @@
 .lowerpart ul li::after {
     left: 0;
     width: 0%;
-    bottom: 0%;
+    bottom: 3%;
     content: "";
     height: 3px;
     transition: 0.5s;

@@ -23,21 +23,12 @@ function currency() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 1) {
+    if (window.scrollY > 2) {
       setIsSticky(true);
     } else {
       setIsSticky(false);
-    }
-    if (!isScrollUp) {
+    }}
 
-      
-      const stickyheader = document.querySelector('stickyheader');
-      if (stickyheader) {
-        stickyheader.style.top = '50px';
-      }
-    }
-    setPrevScrollPos(currentScrollPos);
-  };
 
   return (
     <header>

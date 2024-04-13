@@ -12,7 +12,8 @@ import slider7 from '../assets/slider7.webp'
 import simplelink1 from '../assets/sadekecid1.webp'
 import simplelink2 from '../assets/sadekecid2.webp'
 import simplelink3 from '../assets/sadekecid3.webp'
-
+import kreditbanner from '../assets/kreditbanner.webp'
+import slideri from '../assets/sliderimg.png'
 
 function home() {
 
@@ -160,6 +161,136 @@ function home() {
                         </div>
 
                     </div>
+
+                </div>
+
+            </section>
+
+            <section className="secondsection">
+
+                <div className="leftpartss">
+
+                    <h1>Sizə özəl kredit təklifimizi dərhal öyrənin!</h1>
+                    <p>40 000 AZN-dək komissiyasız kredit əldə edin</p>
+
+                    <input type="text" name="" id="" placeholder='FİN kod *' />
+                    <input type="text" name="" id="" placeholder='Mobil telefon nömrəsi *' />
+                    <input type="checkbox" name="checkbox1" id="checkbox1" />
+                    <label htmlFor="checkbox1">
+                        Kredit tarixçəm haqqında məlumatlarımın <a href="">Azərbaycan Kredit Bürosundan</a> alınmasına və <a href="">ASAN Finans/E-GOV</a> sistemi vasitəsilə şəxsiyyəti təsdiq edən sənəd, iş yeri, əmək haqqı və s. məlumatlarımın ABB-yə təqdim edilməsinə razılıq verirəm
+                    </label>
+
+                    <button> Davam edin</button>
+
+                </div>
+                <div className="rightpartss">
+
+                    <img src={kreditbanner} className='kreditbanner1' />
+
+                </div>
+            </section>
+
+
+            <section className="thirdsection">
+
+                <h1 className='creditcalculator'>Kredit kalkulyatoru</h1>
+
+                <div className="lowerpartt">
+
+                    <div className="lowerleftpart">
+
+                        <div className="firstdiv">
+
+                            <div className="upone">
+                                <p>Kredit məbləği</p>
+                                <h1>40 000 AZN</h1>
+                            </div>
+
+                            <div className="slidereffect">
+                                <div className="bluepart">
+
+                                </div>
+
+                                <div className="imgmid">
+                                    <img src={slideri} className='slider' />
+                                </div>
+
+                                <div className="graypart">
+
+                                </div>
+
+                            </div>
+
+                            <div className="downnumber1">
+                                <p>300</p>
+                                <p>40000</p>
+                            </div>
+
+                        </div>
+
+
+                        <div className="seconddiv">
+
+                            <div className="upmid">
+                                <p>Kredit müddəti</p>
+                                <h1>30 ay</h1>
+                            </div>
+
+                            <div className="slidereffect">
+                                <div className="bluepart">
+
+                                </div>
+
+                                <div className="imgmid">
+                                    <img src={slideri} className='slider' />
+                                </div>
+
+                                <div className="graypart">
+
+                                </div>
+
+                            </div>
+
+                            <div className="downnumber1">
+                                <p>3 ay</p>
+                                <p>60 ay</p>
+                            </div>
+
+                        </div>
+
+                        <div className="thirddiv">
+
+                            <div className="updown">
+                                <p>Faiz dərəcəsi</p>
+                                <h1>19.7 %</h1>
+                            </div>
+
+                            <div className="slidereffect">
+                                <div className="bluepart">
+
+                                </div>
+
+                                <div className="imgmid">
+                                    <img src={slideri} className='slider' />
+                                </div>
+
+                                <div className="graypart">
+
+                                </div>
+
+                            </div>
+
+                            <div className="downnumber3">
+                                <p>10.9%</p>
+
+                            <p className='firstlook'>İlkin hesablama</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div className="lowerrightpart"></div>
 
                 </div>
 
