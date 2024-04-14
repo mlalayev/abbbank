@@ -14,6 +14,9 @@ import simplelink2 from '../assets/sadekecid2.webp'
 import simplelink3 from '../assets/sadekecid3.webp'
 import kreditbanner from '../assets/kreditbanner.webp'
 import slideri from '../assets/sliderimg.png'
+import adviseimg1 from '../assets/adviseimg1.webp'
+// import adviseimg2 from '../assets/adviseimg2.webp'
+// import adviseimg3 from '../assets/adviseimg3.webp'
 
 function home() {
 
@@ -283,18 +286,70 @@ function home() {
                             <div className="downnumber3">
                                 <p>10.9%</p>
 
-                            <p className='firstlook'>İlkin hesablama</p>
+                                <p className='firstlook'>İlkin hesablama</p>
 
                             </div>
 
                         </div>
 
                     </div>
-                    <div className="lowerrightpart"></div>
+                    <div className="lowerrightpart">
+
+                        <div className="uplwrgpartdiv">
+                            <div className="uptxt">
+
+                                <h1>860.03 ₼</h1>
+                                <p>Aylıq ödəniş</p>
+
+                            </div>
+                            <div className="horizontalline">
+
+                            </div>
+                            <div className="lwrtxt">
+
+                                <h1>5160.18 ₼</h1>
+                                <p>Ümumi məbləğ</p>
+
+                            </div>
+                        </div>
+                        <div className="lwlwrgpartdiv">
+
+                            <button className='kreditalin'>Kredit Alın</button>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
             </section>
+
+            <section className='fourthsection'>
+
+                <div className="holder">
+
+                    <div className="advise">
+                        <h1>Təkliflərimiz</h1>
+                    </div>
+
+                    <div className="cardholder">
+                        <div className="card">
+                            <div className="upsdpart">
+                                <img src={adviseimg1} className='adviseimg1' />
+                            </div>
+                            <div className="lwsdpart">
+
+                        <h1 className='cards'>Kartlar</h1>
+
+                        <p className='cardsp'>ABB-dən debet və kredit, status və eksklüziv, virtual, taksit və başqa kartlar. Nağdsız ödənişlərin üstünlüklərindən faydalanın.</p>
+
+                        <button className='morenmore'>Daha ətraflı</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>c
 
         </>
     )
