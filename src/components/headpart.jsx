@@ -23,7 +23,7 @@ function currency() {
   }, []);
 
   const handleScroll = () => {
-    if (window.scrollY > 2) {
+    if (window.scrollY > 20) {
       setIsSticky(true);
     } else {
       setIsSticky(false);

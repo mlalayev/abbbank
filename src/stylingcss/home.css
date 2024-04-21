@@ -478,19 +478,151 @@
 
 .cardholder {
     margin-left: -10px;
+    display: flex;
+    gap: 30px;
 }
 
-.cards{
+
+.cards {
     font-size: 20px;
     margin-top: 38px;
     margin-left: 42px;
 }
 
-.cardsp{
+.cardsp {
     margin-top: 16px;
     margin-inline-end: 20px;
     margin-left: 42px;
     font-size: 15px;
     line-height: 20px;
     color: gray;
+}
+
+.morenmore {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 46px;
+    font-size: 16px;
+    transition: 500ms;
+}
+
+.morenmore:hover {
+    color: gray;
+}
+
+.morenmoree:hover {
+    color: gray;
+}
+
+.fifthsection {
+    width: 100%;
+    height: 687px;
+    padding: 120px 0;
+}
+
+.containertextforfifth {
+    width: 67%;
+    margin: auto;
+}
+
+.fifthsection table {
+    margin-top: 65px;
+}
+
+table {
+    width: 550px;
+    height: 271px;
+}
+
+.firstrow{
+    font-size: 14px;
+}
+
+.tbodytr{
+    /* font-size: 50px; */
+}
+
+.nonn{
+    width: 130px;
+}
+
+.transparantspan span{
+    color: transparent;
+}
+
+.grnup{
+    margin-left: 10px;
+}
+
+.exchangerates {
+    font-size: 36px;
+}
+
+.firstrow th {
+    font-weight: 100;
+    text-align: start;
+    gap: 20px;
+}
+
+tr td {
+    font-size: 34px;
+    font-weight:lighter;
+}
+
+.exchangecurr{
+    font-weight: 700;
+}
+
+.transparant span{
+    color: transparent;
+}
+
+.fifthsecmidpart{
+    display: flex;
+}
+
+.fifthsecmidpartright{
+    /* border: 1px solid red; */
+    width: 525px;
+    height: 220px;
+    padding: 0 15px 0 16px;
+    margin-top: 65px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.morenmoree{
+    /* margin-top: 150px; */
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 80px;
+    margin-left: 46px;
+    font-size: 16px;
+    transition: 500ms;
+}
+
+.fifthsecinput{
+    width: 446px;
+    border-radius: 8px;
+    height: 72px;
+    border: 1px solid rgba(128, 128, 128, 0.27);
+    font-size: 22px;
+    padding: 30px;
+}
+
+.currencyconvertor{
+    font-weight: 100;
+}
+
+.fifthsecinput:focus{
+    outline: 0px;
 }

@@ -15,8 +15,15 @@ import simplelink3 from '../assets/sadekecid3.webp'
 import kreditbanner from '../assets/kreditbanner.webp'
 import slideri from '../assets/sliderimg.png'
 import adviseimg1 from '../assets/adviseimg1.webp'
-// import adviseimg2 from '../assets/adviseimg2.webp'
-// import adviseimg3 from '../assets/adviseimg3.webp'
+import adviseimg2 from '../assets/adviseimg2.webp'
+import adviseimg3 from '../assets/adviseimg3.webp'
+import { TbArrowBadgeRightFilled } from "react-icons/tb";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { IoMdArrowDropup } from "react-icons/io";
+// import Form from 'react-bootstrap/Form';
+// import InputGroup from 'bootstrap/scss/forms'
+// import InputGroup from 'react-bootstrap/InputGroup';
+
 
 function home() {
 
@@ -113,7 +120,7 @@ function home() {
 
             </div>
 
-            <section>
+            <section className='firstsection'>
 
                 <div className="simplelinks">
 
@@ -339,17 +346,120 @@ function home() {
                             </div>
                             <div className="lwsdpart">
 
-                        <h1 className='cards'>Kartlar</h1>
+                                <h1 className='cards'>Kartlar</h1>
 
-                        <p className='cardsp'>ABB-dən debet və kredit, status və eksklüziv, virtual, taksit və başqa kartlar. Nağdsız ödənişlərin üstünlüklərindən faydalanın.</p>
+                                <p className='cardsp'>ABB-dən debet və kredit, status və eksklüziv, virtual, taksit və başqa kartlar. Nağdsız ödənişlərin üstünlüklərindən faydalanın.</p>
 
-                        <button className='morenmore'>Daha ətraflı</button>
+                                <button className='morenmore'>Daha ətraflı <TbArrowBadgeRightFilled size={20} /> </button>
+
+                            </div>
+                        </div>
+
+
+                        <div className="card">
+                            <div className="upsdpart">
+                                <img src={adviseimg2} className='adviseimg1' />
+                            </div>
+                            <div className="lwsdpart">
+
+                                <h1 className='cards'>Kreditlər</h1>
+
+                                <p className='cardsp'>ABB-dən hər kəs üçün sərfəli kreditlər</p>
+
+                                <button className='morenmoree'>Daha ətraflı <TbArrowBadgeRightFilled size={20} /> </button>
+
+                            </div>
+                        </div>
+
+
+                        <div className="card">
+                            <div className="upsdpart">
+                                <img src={adviseimg3} className='adviseimg1' />
+                            </div>
+                            <div className="lwsdpart">
+
+                                <h1 className='cards'>Xidmət ofisi və ATM-lər</h1>
+
+                                <p className='cardsp'>ABB 70 filial, 11 şöbə və 900-dən çox ATM-i ilə xidmətinizdədir. Sizə ən yaxın nöqtəmizi rahatlıqla seçin.</p>
+
+                                <button className='morenmore'>Daha ətraflı <TbArrowBadgeRightFilled size={20} /> </button>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>c
+            </section>
+
+            <section className="fifthsection">
+
+                <div className="containertextforfifth">
+
+                    <h1 className='exchangerates'>Valyuta məzənnələri</h1>
+
+                    <div className="fifthsecmidpart">
+
+                        <div className="fifthsecmidpartleft">
+
+                            <table>
+
+                                <thead>
+                                    <tr className='firstrow'>
+                                        <th>Valyuta</th>
+                                        <th className='nonn'></th>
+                                        <th>Satış</th>
+                                        <th className='transparant'><span>.....</span></th>
+                                        <th>Alış</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className='transparantspan'>
+                                        <td><span>.</span></td>
+                                        <td><span>.</span></td>
+                                        <td><span>.</span></td>
+                                        <td><span>.</span></td>
+                                    </tr>
+                                    <tr className='tbodytr'>
+                                        <td className='exchangecurr'>USD</td>
+                                        <td></td>
+                                        <td>1.7020</td>
+                                        <td className='transparant'><span>..</span></td>
+                                        <td>1.6970</td>
+                                    </tr>
+                                    <tr>
+                                        <td className='exchangecurr'>EUR</td>
+                                        <td></td>
+                                        <td>1.8299 <IoMdArrowDropdown color='red' size={20} /> </td>
+                                        <td className='transparant'><span>.</span></td>
+                                        <td>1.7720 <IoMdArrowDropdown color='red' size={20} /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td className='exchangecurr'>RUB</td>
+                                        <td></td>
+                                        <td>0.0208<IoMdArrowDropup color='green' size={20} className='grnup' /></td>
+                                        <td className='transparant'><span>.</span></td>
+                                        <td>0.0154<IoMdArrowDropup color='green' size={20} className='grnup' /></td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+                        </div>
+                        <div className="fifthsecmidpartright">
+
+                            <h1 className='currencyconvertor'>Valyuta konvertoru</h1>
+                            <div className="input-group">
+                                <input type="text" id='inputnrnrnr' placeholder='Satıram' className='fifthsecinput' />
+                            </div>
+                            <input type="text" className='fifthsecinput' placeholder='Alıram' />
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
 
         </>
     )
