@@ -9,17 +9,19 @@ import slider4 from '../assets/slider4.webp'
 import slider5 from '../assets/slider5.webp'
 import slider6 from '../assets/slider6.webp'
 import slider7 from '../assets/slider7.webp'
+import slideri from '../assets/sliderimg.png'
+import mobilpos from '../assets/mobilpos.webp'
+import { IoMdArrowDropup } from "react-icons/io";
+import adviseimg1 from '../assets/adviseimg1.webp'
+import adviseimg2 from '../assets/adviseimg2.webp'
+import adviseimg3 from '../assets/adviseimg3.webp'
+import { IoMdArrowDropdown } from "react-icons/io";
 import simplelink1 from '../assets/sadekecid1.webp'
 import simplelink2 from '../assets/sadekecid2.webp'
 import simplelink3 from '../assets/sadekecid3.webp'
 import kreditbanner from '../assets/kreditbanner.webp'
-import slideri from '../assets/sliderimg.png'
-import adviseimg1 from '../assets/adviseimg1.webp'
-import adviseimg2 from '../assets/adviseimg2.webp'
-import adviseimg3 from '../assets/adviseimg3.webp'
+import sigortaferdi from '../assets/sigortaferdi.webp'
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
-import { IoMdArrowDropdown } from "react-icons/io";
-import { IoMdArrowDropup } from "react-icons/io";
 // import Form from 'react-bootstrap/Form';
 // import InputGroup from 'bootstrap/scss/forms'
 // import InputGroup from 'react-bootstrap/InputGroup';
@@ -445,11 +447,11 @@ function home() {
                             </div>
 
                             <div className="fifthsecmidpartleftmid"></div>
-                            
+
                             <div className="fifthsecmidpartleftdown">
-                            <p className='fsmpldl'>Son yenilənmə: 24.04.2024</p>
-                            <button className='morenmoreq'> Bütün valyuta məzənnələri <TbArrowBadgeRightFilled size={20} /> </button>
-                            {/* <p className='fsmpldr'>Bütün valyuta məzənnələri <TbArrowBadgeRightFilled size={20} /> </p> */}
+                                <p className='fsmpldl'>Son yenilənmə: 24.04.2024</p>
+                                <button className='morenmoreq'> Bütün valyuta məzənnələri <TbArrowBadgeRightFilled size={20} /> </button>
+                                {/* <p className='fsmpldr'>Bütün valyuta məzənnələri <TbArrowBadgeRightFilled size={20} /> </p> */}
                             </div>
                         </div>
                         <div className="fifthsecmidpartright">
@@ -467,6 +469,34 @@ function home() {
 
                 </div>
 
+            </section>
+
+            <section className="sixthsection">
+                <div className="sixsecleft">
+
+                    <div className="sslbtn">
+
+                        <h1 className='sslh1'>Sizə uyğun sığorta məhsulunu ABB mobile-dan seçin</h1>
+
+                        <button className='morenmoreqq'>Daha Ətraflı <TbArrowBadgeRightFilled size={20} color='white' /></button>
+
+                    </div>
+
+                    <img src={sigortaferdi} className='sigortaferdi' />
+
+                </div>
+                <div className="sixsecright">
+
+                    <div className="ssrbtn">
+
+                        <h1 className='ssrh1'>Mobil POS xidməti ilə biznes rahatlığı hər yerdə sizinlədir</h1>
+
+                        <button className='morenmoreqq'>Daha Ətraflı <TbArrowBadgeRightFilled size={20} color='white' /></button>
+
+                    </div>
+                    <img src={mobilpos} className='mobilpos' />
+
+                </div>
             </section>
 
         </>

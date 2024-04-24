@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 .sliderholder {
@@ -517,12 +517,27 @@
     background-color: transparent;
 }
 
+.morenmoreqq {
+    border: none;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 500ms;
+    align-items: center;
+    background-color: transparent;
+}
+
 .morenmore:hover {
     color: gray;
 }
 
 .morenmoreq:hover {
     color: gray;
+}
+
+.morenmoreqq:hover {
+    color: rgb(205, 204, 204);
 }
 
 .morenmoree:hover {
@@ -604,7 +619,6 @@ tr td {
 }
 
 .morenmoree {
-    /* margin-top: 150px; */
     border: none;
     display: flex;
     cursor: pointer;
@@ -645,5 +659,63 @@ tr td {
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
+}
+
+.sixthsection {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    height: 370px;
+}
+
+.sixsecleft {
+    width: 50%;
+    display: flex;
+    padding-top: 60px;
+    padding-left: 140px;
+    padding-bottom: 55px;
+    background-color: rgb(56, 164, 225);
+}
+
+.sixsecright {
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 130px;
+    padding-bottom: 55px;
+    background-color: rgb(89, 132, 220);
+}
+
+.sslh1 {
+    color: white;
+}
+
+.ssrh1 {
+    color: white;
+}
+
+.sigortaferdi {
+    width: 260px;
+    height: 320px;
+    /* margin-top: 70px; */
+}
+
+.mobilpos {
+    width: 263px;
+    height: 329px;
+}
+
+.ssrbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sslbtn{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
