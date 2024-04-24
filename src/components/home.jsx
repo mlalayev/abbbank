@@ -399,50 +399,58 @@ function home() {
                     <div className="fifthsecmidpart">
 
                         <div className="fifthsecmidpartleft">
+                            <div className="fifthsecmidpartleftup">
+                                <table>
 
-                            <table>
+                                    <thead>
+                                        <tr className='firstrow'>
+                                            <th>Valyuta</th>
+                                            <th className='nonn'></th>
+                                            <th>Satış</th>
+                                            <th className='transparant'><span>.....</span></th>
+                                            <th>Alış</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr className='transparantspan'>
+                                            <td><span>.</span></td>
+                                            <td><span>.</span></td>
+                                            <td><span>.</span></td>
+                                            <td><span>.</span></td>
+                                        </tr>
+                                        <tr className='tbodytr'>
+                                            <td className='exchangecurr'>USD</td>
+                                            <td></td>
+                                            <td>1.7020</td>
+                                            <td className='transparant'><span>..</span></td>
+                                            <td>1.6970</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='exchangecurr'>EUR</td>
+                                            <td></td>
+                                            <td>1.8299 <IoMdArrowDropdown color='red' size={20} /> </td>
+                                            <td className='transparant'><span>.</span></td>
+                                            <td>1.7720 <IoMdArrowDropdown color='red' size={20} /> </td>
+                                        </tr>
+                                        <tr>
+                                            <td className='exchangecurr'>RUB</td>
+                                            <td></td>
+                                            <td>0.0208<IoMdArrowDropup color='green' size={20} className='grnup' /></td>
+                                            <td className='transparant'><span>.</span></td>
+                                            <td>0.0154<IoMdArrowDropup color='green' size={20} className='grnup' /></td>
+                                        </tr>
+                                    </tbody>
 
-                                <thead>
-                                    <tr className='firstrow'>
-                                        <th>Valyuta</th>
-                                        <th className='nonn'></th>
-                                        <th>Satış</th>
-                                        <th className='transparant'><span>.....</span></th>
-                                        <th>Alış</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className='transparantspan'>
-                                        <td><span>.</span></td>
-                                        <td><span>.</span></td>
-                                        <td><span>.</span></td>
-                                        <td><span>.</span></td>
-                                    </tr>
-                                    <tr className='tbodytr'>
-                                        <td className='exchangecurr'>USD</td>
-                                        <td></td>
-                                        <td>1.7020</td>
-                                        <td className='transparant'><span>..</span></td>
-                                        <td>1.6970</td>
-                                    </tr>
-                                    <tr>
-                                        <td className='exchangecurr'>EUR</td>
-                                        <td></td>
-                                        <td>1.8299 <IoMdArrowDropdown color='red' size={20} /> </td>
-                                        <td className='transparant'><span>.</span></td>
-                                        <td>1.7720 <IoMdArrowDropdown color='red' size={20} /> </td>
-                                    </tr>
-                                    <tr>
-                                        <td className='exchangecurr'>RUB</td>
-                                        <td></td>
-                                        <td>0.0208<IoMdArrowDropup color='green' size={20} className='grnup' /></td>
-                                        <td className='transparant'><span>.</span></td>
-                                        <td>0.0154<IoMdArrowDropup color='green' size={20} className='grnup' /></td>
-                                    </tr>
-                                </tbody>
+                                </table>
+                            </div>
 
-                            </table>
-
+                            <div className="fifthsecmidpartleftmid"></div>
+                            
+                            <div className="fifthsecmidpartleftdown">
+                            <p className='fsmpldl'>Son yenilənmə: 24.04.2024</p>
+                            <button className='morenmoreq'> Bütün valyuta məzənnələri <TbArrowBadgeRightFilled size={20} /> </button>
+                            {/* <p className='fsmpldr'>Bütün valyuta məzənnələri <TbArrowBadgeRightFilled size={20} /> </p> */}
+                            </div>
                         </div>
                         <div className="fifthsecmidpartright">
 
