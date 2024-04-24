@@ -528,6 +528,31 @@
     background-color: transparent;
 }
 
+.morenmoreqqq {
+    border: none;
+    color: black;
+    text-align: left;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 500ms;
+    background-color: transparent;
+}
+
+.lastbtn {
+    gap: 5px;
+    border: none;
+    display: flex;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: -410px;
+    transition: 500ms;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
 .morenmore:hover {
     color: gray;
 }
@@ -537,6 +562,14 @@
 }
 
 .morenmoreqq:hover {
+    color: rgb(205, 204, 204);
+}
+
+.morenmoreqqq:hover {
+    color: rgb(205, 204, 204);
+}
+
+.lastbtn:hover {
     color: rgb(205, 204, 204);
 }
 
@@ -613,8 +646,8 @@ tr td {
     height: 220px;
     margin-top: 65px;
     margin-left: 15px;
-    flex-direction: column;
     padding: 0 15px 0 16px;
+    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -700,7 +733,6 @@ tr td {
 .sigortaferdi {
     width: 260px;
     height: 320px;
-    /* margin-top: 70px; */
 }
 
 .mobilpos {
@@ -708,14 +740,89 @@ tr td {
     height: 329px;
 }
 
-.ssrbtn{
+.ssrbtn {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.sslbtn{
+.sslbtn {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.seventhsection {
+    width: 100%;
+    height: 381px;
+    margin-top: 120px;
+    padding-left: 145px;
+    padding-right: 175px;
+}
+
+.ssdh div {
+    width: 32%;
+    display: flex;
+    height: 170px;
+    transition: 500ms;
+    padding-bottom: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.362);
+}
+
+.ssdh div:hover{
+    border-bottom: 1px solid blue ;
+}
+
+.ssdh {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newss {
+    font-size: 36px;
+    font-weight: 200;
+    margin-bottom: 80px;
+}
+
+.ssdh p {
+    color: rgb(98, 98, 98);
+}
+
+.lastpartimg {
+    height: 293px;
+    margin-top: -1px;
+}
+
+.eslp {
+    border: none;
+    width: 900px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    justify-content: space-between;
+    color: #FFF;
+    margin-top: 1px;
+    padding-top: 55px;
+    padding-left: 80px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: rgb(76, 185, 231);
+}
+
+.eighthsection {
+    width: 83%;
+    margin: auto;
+    display: flex;
+    height: 290px;
+    overflow: hidden;
+    margin-bottom: 120px;
+}
+
+.intbankh1{
+    font-size: 38px;
+    font-weight: 200;
 }

@@ -13,7 +13,7 @@ footer {
 
 .container {
     margin: auto;
-    height: 70px;
+    height: 710px;
     align-items: center;
     justify-content: space-between;
 }
@@ -204,7 +204,7 @@ footer {
     width: 100%;
     margin: auto;
     color: gray;
-    height: 200px;
+    height: 50px;
     background-color: rgb(249, 249, 249);
 }
 

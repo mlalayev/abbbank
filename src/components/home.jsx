@@ -1,26 +1,27 @@
-import React from 'react'
-import '../stylingcss/home.css'
-import { useState } from 'react'
-import { useEffect } from 'react'
-import slider1 from '../assets/slider1.webp'
-import slider2 from '../assets/slider2.webp'
-import slider3 from '../assets/slider3.webp'
-import slider4 from '../assets/slider4.webp'
-import slider5 from '../assets/slider5.webp'
-import slider6 from '../assets/slider6.webp'
-import slider7 from '../assets/slider7.webp'
-import slideri from '../assets/sliderimg.png'
-import mobilpos from '../assets/mobilpos.webp'
+import React from 'react';
+import '../stylingcss/home.css';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import slider1 from '../assets/slider1.webp';
+import slider2 from '../assets/slider2.webp';
+import slider3 from '../assets/slider3.webp';
+import slider4 from '../assets/slider4.webp';
+import slider5 from '../assets/slider5.webp';
+import slider6 from '../assets/slider6.webp';
+import slider7 from '../assets/slider7.webp';
+import slideri from '../assets/sliderimg.png';
+import mobilpos from '../assets/mobilpos.webp';
 import { IoMdArrowDropup } from "react-icons/io";
-import adviseimg1 from '../assets/adviseimg1.webp'
-import adviseimg2 from '../assets/adviseimg2.webp'
-import adviseimg3 from '../assets/adviseimg3.webp'
+import adviseimg1 from '../assets/adviseimg1.webp';
+import adviseimg2 from '../assets/adviseimg2.webp';
+import adviseimg3 from '../assets/adviseimg3.webp';
 import { IoMdArrowDropdown } from "react-icons/io";
-import simplelink1 from '../assets/sadekecid1.webp'
-import simplelink2 from '../assets/sadekecid2.webp'
-import simplelink3 from '../assets/sadekecid3.webp'
-import kreditbanner from '../assets/kreditbanner.webp'
-import sigortaferdi from '../assets/sigortaferdi.webp'
+import lastpartimg from '../assets/lastpartimg.png';
+import simplelink1 from '../assets/sadekecid1.webp';
+import simplelink2 from '../assets/sadekecid2.webp';
+import simplelink3 from '../assets/sadekecid3.webp';
+import sigortaferdi from '../assets/sigortaferdi.webp';
+import kreditbanner from '../assets/kreditbanner.webp';
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
 // import Form from 'react-bootstrap/Form';
 // import InputGroup from 'bootstrap/scss/forms'
@@ -497,6 +498,54 @@ function home() {
                     <img src={mobilpos} className='mobilpos' />
 
                 </div>
+            </section>
+
+            <section className="seventhsection">
+
+                <h1 className='newss'>Xəbərlər</h1>
+
+                <div className="ssdh">
+
+                    <div className="ssdl">
+
+                        <button className='morenmoreqqq'>ABB-nin ATM-lərində yenilik!</button>
+
+                        <p>23.04.2024</p>
+
+                    </div>
+                    <div className="ssdm">
+
+                        <button className='morenmoreqqq'>ABB-nin baş sponsorluğu ilə alış-veriş festivalı davam edir!</button>
+
+                        <p>22.04.2024</p>
+
+                    </div>
+                    <div className="ssdr">
+
+                        <button className='morenmoreqqq'>ABB-dən cəmi bir günə tender qarantiyası</button>
+
+                        <p>18.04.2024</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section className="eighthsection">
+
+                <div className="eslp">
+
+                        <h1 className='intbankh1'>ABB Business İnternet Bank ilə sürətli əməliyyatlar</h1>
+
+                        <button className='lastbtn'>
+                            Daha ətraflı <TbArrowBadgeRightFilled size={20}/>
+                        </button>
+
+                </div>
+
+                <img src={lastpartimg} className='lastpartimg' />
+
             </section>
 
         </>
