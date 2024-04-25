@@ -144,8 +144,6 @@ function footpart() {
                         </div>
                     </div>
 
-
-
                 </div>
 
                 <div className="lastpart">
@@ -165,8 +163,6 @@ function footpart() {
                             <img src={logo3} alt="" className='abit lastmidlogo' />
                         </div>
                         <div className="lastright">
-
-
 
                         </div>
 

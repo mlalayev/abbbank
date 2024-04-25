@@ -203,7 +203,6 @@ function home() {
                 </div>
             </section>
 
-
             <section className="thirdsection">
 
                 <h1 className='creditcalculator'>Kredit kalkulyatoru</h1>
@@ -303,6 +302,9 @@ function home() {
                         </div>
 
                     </div>
+                    <div className="horizontalline">
+
+                    </div>
                     <div className="lowerrightpart">
 
                         <div className="uplwrgpartdiv">
@@ -312,9 +314,9 @@ function home() {
                                 <p>Aylıq ödəniş</p>
 
                             </div>
-                            <div className="horizontalline">
+                            {/* <div className="horizontalline">
 
-                            </div>
+                            </div> */}
                             <div className="lwrtxt">
 
                                 <h1>5160.18 ₼</h1>
@@ -536,11 +538,11 @@ function home() {
 
                 <div className="eslp">
 
-                        <h1 className='intbankh1'>ABB Business İnternet Bank ilə sürətli əməliyyatlar</h1>
+                    <h1 className='intbankh1'>ABB Business İnternet Bank ilə sürətli əməliyyatlar</h1>
 
-                        <button className='lastbtn'>
-                            Daha ətraflı <TbArrowBadgeRightFilled size={20}/>
-                        </button>
+                    <button className='lastbtn'>
+                        Daha ətraflı <TbArrowBadgeRightFilled size={20} />
+                    </button>
 
                 </div>
 

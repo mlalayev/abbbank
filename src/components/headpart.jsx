@@ -32,9 +32,11 @@ function currency() {
 
   return (
     <header>
+  
       <div className='totalparts'>
 
         <Headroom>
+  
           <div className="upperpart">
             <div className="upperpartleft">
               <ul className='upleftul'>
@@ -62,12 +64,12 @@ function currency() {
 
             </div>
 
+  
           </div>
+          
           <div>
 
             <div className={isSticky ? "stickyheader" : ''}>
-
-
 
               <div className="midpart">
 
@@ -342,12 +344,14 @@ function currency() {
 
               </div>
 
-
-
             </div>
+
           </div>
+
         </Headroom>
+
       </div>
+  
     </header >
   );
 }

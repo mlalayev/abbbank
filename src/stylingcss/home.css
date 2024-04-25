@@ -437,7 +437,9 @@
     width: 220px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 80px;
     border: 1px solid rgba(128, 128, 128, 0.248);
+    /* position: absolute; */
 }
 
 .fourthsection {
