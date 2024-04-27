@@ -30,12 +30,96 @@ import { TbArrowBadgeRightFilled } from "react-icons/tb";
 
 function home() {
 
-    const [slider, setSlider] = useState("Bayramda xidmətinizdəyik!");
 
-    const [sliderp, setSliderp] = useState('13 aprel 2024-cü il tarixində');
-
+    const [value1, setValue1] = useState(0);
+    const [value2, setValue2] = useState(0);
+    const [value3, setValue3] = useState(0);
     const [sliderimg, setSliderimg] = useState(slider1);
-    // const [color, setColor] = useState(color)
+    const [kredithesablama, setKredithesablama] = useState(101.87)
+    const [slider, setSlider] = useState("Bayramda xidmətinizdəyik!");
+    const [sliderp, setSliderp] = useState('13 aprel 2024-cü il tarixində');
+    const [umumikredithesablama, setUmumikredithesablama] = useState(5160.21)
+
+
+    useEffect(() => {
+        const sliderr1 = document.getElementById("myRange");
+        const output = document.getElementById("demo");
+
+        output.innerHTML = sliderr1.value;
+
+        sliderr1.addEventListener("input", function () {
+            output.innerHTML = this.value;
+            setValue1(parseInt(this.value));
+        });
+
+        return () => {
+            sliderr1.removeEventListener("input", function () {
+                output.innerHTML = this.value;
+            });
+        };
+    }, []);
+
+    useEffect(() => {
+        const slider2 = document.getElementById("myRange2");
+        const output2 = document.getElementById("demo2");
+
+        output2.innerHTML = slider2.value;
+
+        slider2.addEventListener("input", function () {
+            output2.innerHTML = this.value;
+            setValue2(parseInt(this.value));
+        });
+
+        return () => {
+            slider2.removeEventListener("input", function () {
+                output2.innerHTML = this.value;
+            });
+        };
+    }, []);
+
+    useEffect(() => {
+        const slider3 = document.getElementById("myRange3");
+        const output3 = document.getElementById("demo3");
+
+        output3.innerHTML = slider3.value;
+
+        slider3.addEventListener("input", function () {
+            output3.innerHTML = this.value;
+            setValue3(parseInt(this.value));
+        });
+
+        return () => {
+            slider3.removeEventListener("input", function () {
+                output3.innerHTML = this.value;
+            });
+        };
+    }, []);
+
+
+
+    const logSumm = (value1, value2, value3) => {
+        const total = Math.round((value1 * (value3 / 100) * (1 + (value3 / 100)) ** value2) / (((1 + (value3 / 100)) ** value2) - 1)) + value1
+        setKredithesablama(total);
+    };
+
+    const monthlyPay = (total, term) => {
+        const mPay = Math.round(total / term);
+        console.log('monthly pay: ', mPay);
+        setUmumikredithesablama(mPay);
+    };
+
+    useEffect(() => {
+        logSumm(value1, value2, value3);
+    }, [value1, value2, value3]);
+
+    useEffect(() => {
+        monthlyPay(kredithesablama, value2);
+    }, [kredithesablama, value2]);
+
+
+    if(monthlyPay == NaN){
+        console.log('my name is murad')
+    }
 
     return (
         <>
@@ -203,7 +287,7 @@ function home() {
                 </div>
             </section>
 
-            <section className="thirdsection">
+            {/* <section className="thirdsection">
 
                 <h1 className='creditcalculator'>Kredit kalkulyatoru</h1>
 
@@ -314,9 +398,6 @@ function home() {
                                 <p>Aylıq ödəniş</p>
 
                             </div>
-                            {/* <div className="horizontalline">
-
-                            </div> */}
                             <div className="lwrtxt">
 
                                 <h1>5160.18 ₼</h1>
@@ -334,7 +415,94 @@ function home() {
 
                 </div>
 
+            </section> */}
+
+            <section className="ninthsection">
+
+                <div className="ninthsecleft">
+
+                    <h1 className='crcalh1'>Kredit kalkulyatoru</h1>
+
+                    <div className="inputdiv1">
+
+                        <div className="creditvalue">
+
+                            <p className='testt1'>Kredit məbləği</p>
+                            <p className='test1'><span id='demo'>{value1}</span> <span>AZN</span></p>
+
+                        </div>
+
+                        <input type="range" name="myRange" id="myRange" className='myRange' min={300} max={40000} />
+
+                        <div className="lwtxtt1dv">
+                            <p>300</p>
+                            <p>40000</p>
+                        </div>
+
+                    </div>
+
+                    <div className="inputdiv2">
+
+                        <div className="creditvalue2">
+
+                            <p className='testt2'>Kredit müddəti</p>
+                            <p className='test2'><span id='demo2'>{value2}</span> <span>ay</span></p>
+
+                        </div>
+
+                        <input type="range" name="myRange2" id="myRange2" className='myRange2' min={3} max={60} />
+
+
+                        <div className="lwtxtt1dv">
+                            <p>3 ay</p>
+                            <p>60 ay</p>
+                        </div>
+
+                    </div>
+
+                    <div className="inputdiv3">
+
+                        <div className="creditvalue3">
+
+                            <p className='testt3'>Faiz dərəcəsi</p>
+                            <p className='test3'><span id='demo3'>{value3}</span> <span>%</span></p>
+
+                        </div>
+
+                        <input type="range" name="myRange3" id="myRange3" className='myRange3' min={11} max={30} />
+
+
+                        <div className="lwtxtt1dv">
+                            <p>11%</p>
+                        </div>
+
+
+                    </div>
+
+                    <p className='firstsum'>İlkin hesablama</p>
+
+                </div>
+
+
+
+                <div className="ninthsecright">
+
+                    <p><span id='ekranayazi2'>{umumikredithesablama}</span><span id='manaticon'>₼</span></p>
+
+                    <p id='monthlypaymant'>Aylıq ödəniş</p>
+
+
+                    <div className="ninthsecmidhorline"></div>
+
+                    <p><span id='ekranayazi'>{kredithesablama} <span>₼</span></span></p>
+
+                    <p id='monthlypaymant2'>Ümumi məbləğ</p>
+
+                    <button className='kreditalin'>Kredit Alın</button>
+                </div>
+
             </section>
+
 
             <section className='fourthsection'>
 
@@ -549,6 +717,8 @@ function home() {
                 <img src={lastpartimg} className='lastpartimg' />
 
             </section>
+
+
 
         </>
     )

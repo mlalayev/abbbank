@@ -416,6 +416,8 @@
     height: 48px;
     width: 135px;
     border: none;
+    cursor: pointer;
+    margin-top: 67px;
     color: #FFFFFF;
     padding: 15px 35px;
     border-radius: 6px;
@@ -430,16 +432,6 @@
 .lwrtxt h1 {
     font-size: 40px;
     margin-bottom: 10px;
-}
-
-.horizontalline {
-    height: 1px;
-    width: 220px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 80px;
-    border: 1px solid rgba(128, 128, 128, 0.248);
-    /* position: absolute; */
 }
 
 .fourthsection {
@@ -773,8 +765,8 @@ tr td {
     border-bottom: 1px solid rgba(128, 128, 128, 0.362);
 }
 
-.ssdh div:hover{
-    border-bottom: 1px solid blue ;
+.ssdh div:hover {
+    border-bottom: 1px solid blue;
 }
 
 .ssdh {
@@ -803,14 +795,14 @@ tr td {
     width: 900px;
     height: 290px;
     display: flex;
-    flex-direction: column;
-    padding-bottom: 60px;
-    justify-content: space-between;
     color: #FFF;
     margin-top: 1px;
     padding-top: 55px;
     padding-left: 80px;
+    padding-bottom: 60px;
+    flex-direction: column;
     border-top-left-radius: 12px;
+    justify-content: space-between;
     border-bottom-left-radius: 12px;
     background-color: rgb(76, 185, 231);
 }
@@ -824,7 +816,178 @@ tr td {
     margin-bottom: 120px;
 }
 
-.intbankh1{
+.intbankh1 {
     font-size: 38px;
     font-weight: 200;
+}
+
+.ninthsection {
+    width: 100%;
+    display: flex;
+    height: 738px;
+    position: relative;
+    padding-left: 250px;
+}
+
+.myRange {
+    left: -1px;
+    width: 496px;
+    bottom: -5px;
+    position: absolute;
+}
+
+.myRange2 {
+    left: -1px;
+    width: 496px;
+    bottom: -5px;
+    position: absolute;
+}
+
+.myRange3 {
+    left: -1px;
+    bottom: -5px;
+    width: 496px;
+    position: absolute;
+}
+
+.inputdiv1 {
+    height: 70px;
+    width: 494px;
+    display: flex;
+    cursor: default;
+    margin-top: -45px;
+    border-radius: 6px;
+    padding-left: 25px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+}
+
+.test1 {
+    right: 5%;
+    position: absolute;
+    font-weight: bolder;
+}
+
+.test2 {
+    right: 5%;
+    color: black;
+    position: absolute;
+    font-weight: bolder;
+}
+
+.testt1,
+.testt2,
+.testt3 {
+    color: gray;
+}
+
+.test3 {
+    right: 5%;
+    position: absolute;
+    font-weight: bolder;
+}
+
+.creditvalue {
+    gap: 260px;
+    display: flex;
+}
+
+.inputdiv2 {
+    height: 70px;
+    width: 494px;
+    display: flex;
+    cursor: default;
+    margin-top: 60px;
+    padding-left: 25px;
+    border-radius: 6px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+}
+
+.inputdiv3 {
+    height: 70px;
+    width: 494px;
+    display: flex;
+    cursor: default;
+    margin-top: 62px;
+    padding-left: 25px;
+    border-radius: 6px;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+}
+
+.creditvalue2 {
+    gap: 280px;
+    display: flex;
+}
+
+.creditvalue3 {
+    gap: 280px;
+    display: flex;
+}
+
+.crcalh1 {
+    font-size: 36px;
+    font-weight: 200;
+    margin-top: 120px;
+    margin-bottom: 95px;
+}
+
+.lwtxtt1dv p {
+    font-size: 14px;
+    color: rgb(54, 54, 54);
+}
+
+.lwtxtt1dv {
+    left: 0px;
+    width: 100%;
+    bottom: -30px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+}
+
+.firstsum {
+    bottom: 16%;
+    font-size: 14px;
+    position: absolute;
+    color: rgba(37, 37, 37, 0.562);
+}
+
+.ninthsecright {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-top: 210px;
+}
+
+.ninthsecmidhorline {
+    height: 1px;
+    width: 220px;
+    border: 1px solid rgba(128, 128, 128, 0.248);
+    margin-bottom: 20px;
+}
+
+#ekranayazi,
+#ekranayazi2 {
+    font-size: 46px;
+    font-weight: 500;
+}
+
+#manaticon{
+    font-size: 46px;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+#monthlypaymant,
+#monthlypaymant2 {
+    margin: 5px 0 25px 0;
+    font-size: 16px;
 }
