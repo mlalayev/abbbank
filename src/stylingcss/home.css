@@ -991,3 +991,17 @@ tr td {
     margin: 5px 0 25px 0;
     font-size: 16px;
 }
+
+.upinputcon{
+    display: flex;
+}
+
+.downinputcon{
+    display: flex;
+}
+
+#currencySelect{
+margin-left: -80px;
+width: 100px;
+}
+

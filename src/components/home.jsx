@@ -20,27 +20,82 @@ import lastpartimg from '../assets/lastpartimg.png';
 import simplelink1 from '../assets/sadekecid1.webp';
 import simplelink2 from '../assets/sadekecid2.webp';
 import simplelink3 from '../assets/sadekecid3.webp';
+import CurrencyRow from '../components/CurrencyRow.jsx'
 import sigortaferdi from '../assets/sigortaferdi.webp';
 import kreditbanner from '../assets/kreditbanner.webp';
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
-// import Form from 'react-bootstrap/Form';
-// import InputGroup from 'bootstrap/scss/forms'
-// import InputGroup from 'react-bootstrap/InputGroup';
 
+
+// const BASE_URL = 'https://api.exchangeratesapi.io/v1/latest?access_key=f3276b63b6fdd7711feb9a8be3cbf6d4'
 
 function home() {
 
-
-    const [value1, setValue1] = useState(0);
-    const [value2, setValue2] = useState(0);
-    const [value3, setValue3] = useState(0);
+    const [value1, setValue1] = useState(300);
+    const [value2, setValue2] = useState(3);
+    const [value3, setValue3] = useState(11);
     const [sliderimg, setSliderimg] = useState(slider1);
     const [kredithesablama, setKredithesablama] = useState(101.87)
     const [slider, setSlider] = useState("Bayramda xidmətinizdəyik!");
     const [sliderp, setSliderp] = useState('13 aprel 2024-cü il tarixində');
     const [umumikredithesablama, setUmumikredithesablama] = useState(5160.21)
 
+    const [currencyOption, setCurrencyOption] = useState([])
+    // const [fromCurrency, setFromCurrency] = useState()
+    // const [toCurrency, setToCurrency] = useState()
+    const [amount, setAmount] = useState(1)
+    const [amountInFromCurrency, setAmountInFromCurrency] = useState(true)
+    const [exchangeRate, setExchangeRate] = useState()
 
+    const [fromCurrency, setFromCurrency] = useState('EUR'); // Initialize with default currency
+    const [toCurrency, setToCurrency] = useState('USD');
+
+
+    console.log(exchangeRate);
+
+
+
+    let toAmount, fromAmount;
+
+    if (amountInFromCurrency) {
+        fromAmount = amount
+        toAmount = amount * exchangeRate
+    } else {
+        toAmount = amount
+        fromAmount = amount / exchangeRate
+    }
+
+    useEffect(() => {
+        fetch('../../exchangeRatesData.json')
+            .then(res => res.json())
+            .then(data => {
+                const firstCurrency = Object.keys(data.rates)[0];
+                setCurrencyOption([data.base, ...Object.keys(data.rates)]);
+                setFromCurrency(data.base);
+                setToCurrency(firstCurrency);
+                setExchangeRate(data.rates[firstCurrency]);
+            });
+    }, []);
+
+    useEffect(() => {
+        if (fromCurrency != null && toCurrency != null) {
+            fetch(`../../exchangeRatesData.json?base=${fromCurrency}&symbols=${toCurrency}`)
+                .then(res => res.json())
+                .then(data => setExchangeRate(data.rates[toCurrency]))
+        }
+    }, [toCurrency, fromCurrency])
+
+    
+        function handleFromAmountChange(e) {
+            setAmount(e.target.value)
+            setAmountInFromCurrency(true)
+        }
+
+        function handleToAmountChange(e) {
+            setAmount(e.target.value)
+            setAmountInFromCurrency(false)
+        }
+
+    
     useEffect(() => {
         const sliderr1 = document.getElementById("myRange");
         const output = document.getElementById("demo");
@@ -96,7 +151,6 @@ function home() {
     }, []);
 
 
-
     const logSumm = (value1, value2, value3) => {
         const total = Math.round((value1 * (value3 / 100) * (1 + (value3 / 100)) ** value2) / (((1 + (value3 / 100)) ** value2) - 1)) + value1
         setKredithesablama(total);
@@ -116,10 +170,6 @@ function home() {
         monthlyPay(kredithesablama, value2);
     }, [kredithesablama, value2]);
 
-
-    if(monthlyPay == NaN){
-        console.log('my name is murad')
-    }
 
     return (
         <>
@@ -622,16 +672,28 @@ function home() {
                             <div className="fifthsecmidpartleftdown">
                                 <p className='fsmpldl'>Son yenilənmə: 24.04.2024</p>
                                 <button className='morenmoreq'> Bütün valyuta məzənnələri <TbArrowBadgeRightFilled size={20} /> </button>
-                                {/* <p className='fsmpldr'>Bütün valyuta məzənnələri <TbArrowBadgeRightFilled size={20} /> </p> */}
                             </div>
                         </div>
                         <div className="fifthsecmidpartright">
 
                             <h1 className='currencyconvertor'>Valyuta konvertoru</h1>
-                            <div className="input-group">
-                                <input type="text" id='inputnrnrnr' placeholder='Satıram' className='fifthsecinput' />
-                            </div>
-                            <input type="text" className='fifthsecinput' placeholder='Alıram' />
+
+                            <CurrencyRow
+                                currencyOption={currencyOption}
+                                selectedCurrency={fromCurrency} // Ensure fromCurrency is passed as selectedCurrency for the first input
+                                onChangeCurrency={e => setFromCurrency(e.target.value)} // Check if this function updates fromCurrency correctly
+                                onChangeAmount={handleFromAmountChange}
+                                amount={fromAmount}
+                            />
+
+
+                            <CurrencyRow
+                                currencyOption={currencyOption}
+                                selectedCurrency={toCurrency}
+                                onChangeCurrency={e => setToCurrency(e.target.value)} // Ensure this function updates toCurrency correctly
+                                onChangeAmount={handleToAmountChange}
+                                amount={toAmount}
+                            />
 
 
                         </div>

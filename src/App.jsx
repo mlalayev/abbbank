@@ -4,6 +4,7 @@ import Headroom from 'react-headroom'
 import HOME from './components/home.jsx'
 import HEADER from './components/headpart.jsx'
 import FOOTER from './components/footpart.jsx'
+import CurrencyRow from './components/CurrencyRow.jsx'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <HEADER />
       <HOME />
       <FOOTER />
+      {/* <CurrencyRow/> */}
     </>
   )
 }
