@@ -14,7 +14,6 @@ function App() {
       <HEADER />
       <HOME />
       <FOOTER />
-      {/* <CurrencyRow/> */}
     </>
   )
 }

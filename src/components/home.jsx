@@ -20,41 +20,34 @@ import lastpartimg from '../assets/lastpartimg.png';
 import simplelink1 from '../assets/sadekecid1.webp';
 import simplelink2 from '../assets/sadekecid2.webp';
 import simplelink3 from '../assets/sadekecid3.webp';
-import CurrencyRow from '../components/CurrencyRow.jsx'
 import sigortaferdi from '../assets/sigortaferdi.webp';
 import kreditbanner from '../assets/kreditbanner.webp';
+import CurrencyRow from '../components/CurrencyRow.jsx';
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
 
 
-// const BASE_URL = 'https://api.exchangeratesapi.io/v1/latest?access_key=f3276b63b6fdd7711feb9a8be3cbf6d4'
 
 function home() {
 
+    const [amount, setAmount] = useState(1)
+    const [value2, setValue2] = useState(50);
+    const [value3, setValue3] = useState(30);
     const [value1, setValue1] = useState(300);
-    const [value2, setValue2] = useState(3);
-    const [value3, setValue3] = useState(11);
+    const [toCurrency, setToCurrency] = useState()
+    const [exchangeRate, setExchangeRate] = useState()
+    const [fromCurrency, setFromCurrency] = useState()
     const [sliderimg, setSliderimg] = useState(slider1);
+    const [currencyOption, setCurrencyOption] = useState([])
     const [kredithesablama, setKredithesablama] = useState(101.87)
     const [slider, setSlider] = useState("Bayramda xidmətinizdəyik!");
+    const [amountInFromCurrency, setAmountInFromCurrency] = useState(true)
     const [sliderp, setSliderp] = useState('13 aprel 2024-cü il tarixində');
     const [umumikredithesablama, setUmumikredithesablama] = useState(5160.21)
 
-    const [currencyOption, setCurrencyOption] = useState([])
-    // const [fromCurrency, setFromCurrency] = useState()
-    // const [toCurrency, setToCurrency] = useState()
-    const [amount, setAmount] = useState(1)
-    const [amountInFromCurrency, setAmountInFromCurrency] = useState(true)
-    const [exchangeRate, setExchangeRate] = useState()
+    // console.log(exchangeRate);
 
-    const [fromCurrency, setFromCurrency] = useState('EUR'); // Initialize with default currency
-    const [toCurrency, setToCurrency] = useState('USD');
-
-
-    console.log(exchangeRate);
-
-
-
-    let toAmount, fromAmount;
+    let toAmount = 0
+    let fromAmount = 0;
 
     if (amountInFromCurrency) {
         fromAmount = amount
@@ -65,18 +58,6 @@ function home() {
     }
 
     useEffect(() => {
-        fetch('../../exchangeRatesData.json')
-            .then(res => res.json())
-            .then(data => {
-                const firstCurrency = Object.keys(data.rates)[0];
-                setCurrencyOption([data.base, ...Object.keys(data.rates)]);
-                setFromCurrency(data.base);
-                setToCurrency(firstCurrency);
-                setExchangeRate(data.rates[firstCurrency]);
-            });
-    }, []);
-
-    useEffect(() => {
         if (fromCurrency != null && toCurrency != null) {
             fetch(`../../exchangeRatesData.json?base=${fromCurrency}&symbols=${toCurrency}`)
                 .then(res => res.json())
@@ -84,18 +65,31 @@ function home() {
         }
     }, [toCurrency, fromCurrency])
 
-    
-        function handleFromAmountChange(e) {
-            setAmount(e.target.value)
-            setAmountInFromCurrency(true)
-        }
 
-        function handleToAmountChange(e) {
-            setAmount(e.target.value)
-            setAmountInFromCurrency(false)
-        }
+    useEffect(() => {
+        fetch('../../exchangeRatesData.json')
+            .then(res => res.json())
+            .then(data => {
+                const firstCurrency = Object.keys(data.rates)[0];
+                setCurrencyOption([data.base, ...Object.keys(data.rates)]);
+                setExchangeRate(data.rates[firstCurrency]);
+                setToCurrency(firstCurrency);
+                setFromCurrency(data.base);
+            });
+    }, []);
 
-    
+
+    function handleFromAmountChange(e) {
+        setAmount(e.target.value)
+        setAmountInFromCurrency(true)
+    }
+
+    function handleToAmountChange(e) {
+        setAmount(e.target.value)
+        setAmountInFromCurrency(false)
+    }
+
+
     useEffect(() => {
         const sliderr1 = document.getElementById("myRange");
         const output = document.getElementById("demo");
@@ -622,6 +616,7 @@ function home() {
                     <div className="fifthsecmidpart">
 
                         <div className="fifthsecmidpartleft">
+                        
                             <div className="fifthsecmidpartleftup">
                                 <table>
 
@@ -673,19 +668,20 @@ function home() {
                                 <p className='fsmpldl'>Son yenilənmə: 24.04.2024</p>
                                 <button className='morenmoreq'> Bütün valyuta məzənnələri <TbArrowBadgeRightFilled size={20} /> </button>
                             </div>
+                        
                         </div>
+                        
                         <div className="fifthsecmidpartright">
 
                             <h1 className='currencyconvertor'>Valyuta konvertoru</h1>
 
                             <CurrencyRow
                                 currencyOption={currencyOption}
-                                selectedCurrency={fromCurrency} // Ensure fromCurrency is passed as selectedCurrency for the first input
-                                onChangeCurrency={e => setFromCurrency(e.target.value)} // Check if this function updates fromCurrency correctly
+                                selectedCurrency={fromCurrency}
+                                onChangeCurrency={e => setFromCurrency(e.target.value)}
                                 onChangeAmount={handleFromAmountChange}
                                 amount={fromAmount}
                             />
-
 
                             <CurrencyRow
                                 currencyOption={currencyOption}
@@ -694,7 +690,6 @@ function home() {
                                 onChangeAmount={handleToAmountChange}
                                 amount={toAmount}
                             />
-
 
                         </div>
 

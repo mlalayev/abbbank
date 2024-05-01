@@ -996,12 +996,12 @@ tr td {
     display: flex;
 }
 
-.downinputcon{
-    display: flex;
-}
-
 #currencySelect{
 margin-left: -80px;
 width: 100px;
 }
+.downinputcon{
+    display: flex;
+}
+
 
